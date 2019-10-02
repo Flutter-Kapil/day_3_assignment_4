@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Container(
-                    margin:
-                        EdgeInsets.symmetric(vertical: 8.0, horizontal: 10.0),
+                    margin: EdgeInsets.fromLTRB(10.0, 28.0, 10.0, 4.0),
                     padding: EdgeInsets.symmetric(vertical: 8.0),
                     decoration: BoxDecoration(
                       color: Colors.blue.shade100,
@@ -30,6 +29,8 @@ class MyApp extends StatelessWidget {
                     child: Center(
                       child: Text(
                         "Strawberry pavlova",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -42,8 +43,8 @@ class MyApp extends StatelessWidget {
                     ),
 //                    width: 200.0,
                     margin:
-                        EdgeInsets.symmetric(vertical: 4.0, horizontal: 10.0),
-                    padding: EdgeInsets.symmetric(vertical: 8.0),
+                        EdgeInsets.symmetric(vertical: 2.0, horizontal: 10.0),
+//                    padding,: EdgeInsets.symmetric(vertical: 1.0),
                     child: Center(
                       child: Text(
                         "pavlova is a meringue-based"
@@ -52,12 +53,12 @@ class MyApp extends StatelessWidget {
                         "Pavlova features a crisp crust and "
                         "soft, light inside, topped with fruit"
                         "and whipped cream. ",
+                        textAlign: TextAlign.center,
                       ),
                     ),
                   ),
                   Container(
-                    margin:
-                        EdgeInsets.symmetric(vertical: 8.0, horizontal: 10.0),
+                    margin: EdgeInsets.fromLTRB(10.0, 4.0, 10.0, 10.0),
                     decoration: BoxDecoration(
                       color: Colors.blue.shade100,
                       border: Border.all(
@@ -120,17 +121,17 @@ class MyApp extends StatelessWidget {
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
-                            Icon(Icons.thumb_up),
-                            Text('PREP'),
-                            Text('25 Min'),
+                            Icon(Icons.timer),
+                            Text('COOK'),
+                            Text('1 Hr'),
                           ],
                         ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
-                            Icon(Icons.thumb_up),
-                            Text('PREP'),
-                            Text('25 Min'),
+                            Icon(Icons.fastfood),
+                            Text('FEEDS'),
+                            Text('4-6'),
                           ],
                         ),
                       ],
@@ -141,9 +142,9 @@ class MyApp extends StatelessWidget {
             ),
             Expanded(
               flex: 2,
-              child: Image(
-                image: AssetImage('image/food.png'),
-                fit: BoxFit.contain,
+              child: FittedBox(
+                child: Image(image: AssetImage('image/food.png')),
+                fit: BoxFit.fill,
               ),
             ),
           ],
