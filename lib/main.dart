@@ -97,7 +97,45 @@ class MyApp extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(),
+                  Container(
+                    margin:
+                        EdgeInsets.symmetric(vertical: 8.0, horizontal: 10.0),
+                    decoration: BoxDecoration(
+                      color: Colors.blue.shade100,
+                      border: Border.all(
+                        color: Colors.black,
+                      ),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            Icon(Icons.thumb_up),
+                            Text('PREP'),
+                            Text('25 Min'),
+                          ],
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            Icon(Icons.thumb_up),
+                            Text('PREP'),
+                            Text('25 Min'),
+                          ],
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            Icon(Icons.thumb_up),
+                            Text('PREP'),
+                            Text('25 Min'),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
