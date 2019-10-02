@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     margin: EdgeInsets.fromLTRB(10.0, 28.0, 10.0, 4.0),
-                    padding: EdgeInsets.symmetric(vertical: 8.0),
+                    padding: EdgeInsets.fromLTRB(4.0, 2.0, 4.0, 8.0),
                     decoration: BoxDecoration(
                       color: Colors.blue.shade100,
                       border: Border.all(
@@ -142,10 +142,8 @@ class MyApp extends StatelessWidget {
             ),
             Expanded(
               flex: 2,
-              child: FittedBox(
-                child: Image(image: AssetImage('image/food.png')),
-                fit: BoxFit.fill,
-              ),
+              child:
+                  Container(child: Image(image: AssetImage('image/food.png'))),
             ),
           ],
         ));
