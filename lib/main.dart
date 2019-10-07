@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         Expanded(
           flex: 1,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               Container(
                 margin: EdgeInsets.fromLTRB(10.0, 78.0, 10.0, 4.0),
@@ -65,6 +66,7 @@ class MyApp extends StatelessWidget {
 //                  ),
 //                ),
                 child: Wrap(
+                  runSpacing: 7,
                   alignment: WrapAlignment.center,
                   children: <Widget>[
                     Row(
