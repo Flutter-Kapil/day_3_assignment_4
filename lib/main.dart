@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -110,7 +111,7 @@ class _FoodLayoutState extends State<FoodLayout> {
 //                ),
             child: Wrap(
               runSpacing: 7,
-//              alignment: WrapAlignment.center,
+              alignment: WrapAlignment.center,
               children: <Widget>[
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -143,6 +144,7 @@ class _FoodLayoutState extends State<FoodLayout> {
                   ],
                 ),
                 Container(
+                  padding: EdgeInsets.all(2),
                   child: Text('170 Reviews'),
                 )
               ],
