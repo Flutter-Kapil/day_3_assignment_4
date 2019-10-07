@@ -122,7 +122,10 @@ class MyApp extends StatelessWidget {
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: <Widget>[
-                          Icon(Icons.thumb_up),
+                          Icon(
+                            Icons.thumb_up,
+                            color: Colors.green,
+                          ),
                           SizedBox(
                             height: 5,
                           ),
@@ -139,7 +142,7 @@ class MyApp extends StatelessWidget {
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
-                          Icon(Icons.timer),
+                          Icon(Icons.timer, color: Colors.green),
                           SizedBox(
                             height: 5,
                           ),
@@ -156,7 +159,7 @@ class MyApp extends StatelessWidget {
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
-                          Icon(Icons.fastfood),
+                          Icon(Icons.fastfood, color: Colors.green),
                           SizedBox(
                             height: 5,
                           ),
