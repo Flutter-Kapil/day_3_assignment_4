@@ -141,8 +141,8 @@ class MyApp extends StatelessWidget {
         Expanded(
           flex: 2,
           child: Container(
-              child: Image(
-                  image: AssetImage('image/food.png'), fit: BoxFit.cover)),
+              child:
+                  Image(image: AssetImage('image/food.png'), fit: BoxFit.fill)),
         ),
       ],
     ));
