@@ -116,8 +116,10 @@ class MyApp extends StatelessWidget {
 //                    color: Colors.black,
 //                  ),
 //                ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  child: Wrap(
+                    alignment: WrapAlignment.center,
+                    runSpacing: 10,
+//                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -139,7 +141,7 @@ class MyApp extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 12,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -158,7 +160,7 @@ class MyApp extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 12,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
