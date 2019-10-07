@@ -76,27 +76,27 @@ class MyApp extends StatelessWidget {
                         children: <Widget>[
                           Icon(
                             Icons.star,
-                            size: 14,
+                            size: 18,
                             color: Colors.grey.shade600,
                           ),
                           Icon(
                             Icons.star,
-                            size: 14,
+                            size: 18,
                             color: Colors.grey.shade600,
                           ),
                           Icon(
                             Icons.star,
-                            size: 14,
+                            size: 18,
                             color: Colors.grey.shade600,
                           ),
                           Icon(
                             Icons.star,
-                            size: 14,
+                            size: 18,
                             color: Colors.grey.shade600,
                           ),
                           Icon(
                             Icons.star,
-                            size: 14,
+                            size: 18,
                             color: Colors.grey.shade600,
                           ),
                         ],
