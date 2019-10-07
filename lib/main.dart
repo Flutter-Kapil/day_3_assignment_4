@@ -133,7 +133,9 @@ class MyApp extends StatelessWidget {
                           SizedBox(
                             height: 5,
                           ),
-                          Text('25 Min'),
+                          Text('25 minutes',
+                              style:
+                                  TextStyle(fontSize: 12, color: Colors.grey)),
                         ],
                       ),
                       SizedBox(
@@ -150,7 +152,9 @@ class MyApp extends StatelessWidget {
                           SizedBox(
                             height: 5,
                           ),
-                          Text('1 Hr'),
+                          Text('1 hour',
+                              style:
+                                  TextStyle(fontSize: 12, color: Colors.grey)),
                         ],
                       ),
                       SizedBox(
@@ -167,7 +171,10 @@ class MyApp extends StatelessWidget {
                           SizedBox(
                             height: 5,
                           ),
-                          Text('4-6'),
+                          Text(
+                            '4 - 6',
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          ),
                         ],
                       ),
                     ],
