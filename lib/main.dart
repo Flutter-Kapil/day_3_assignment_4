@@ -64,10 +64,11 @@ class MyApp extends StatelessWidget {
                     color: Colors.black,
                   ),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                child: Wrap(
+                  alignment: WrapAlignment.center,
                   children: <Widget>[
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
                           Icons.star,
@@ -98,6 +99,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
+                alignment: Alignment.center,
                 margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 10.0),
                 decoration: BoxDecoration(
                   color: Colors.blue.shade100,
