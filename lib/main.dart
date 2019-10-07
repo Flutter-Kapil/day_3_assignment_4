@@ -102,9 +102,7 @@ class MyApp extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        child: Text(
-                          '170 Reviews'
-                        ),
+                        child: Text('170 Reviews'),
                       )
                     ],
                   ),
