@@ -41,11 +41,11 @@ class _FoodLayoutState extends State<FoodLayout> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         Expanded(
-          flex: 2,
+          flex: 6,
           child: _imageSection(),
         ),
         Expanded(
-          flex: 3,
+          flex: 7,
           child: _infoSection(),
         ),
       ],
@@ -110,7 +110,7 @@ class _FoodLayoutState extends State<FoodLayout> {
 //                ),
             child: Wrap(
               runSpacing: 7,
-              alignment: WrapAlignment.center,
+//              alignment: WrapAlignment.center,
               children: <Widget>[
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -157,10 +157,8 @@ class _FoodLayoutState extends State<FoodLayout> {
 //                    color: Colors.black,
 //                  ),
 //                ),
-            child: Wrap(
-              alignment: WrapAlignment.center,
-              runSpacing: 10,
-//                    mainAxisAlignment: MainAxisAlignment.center,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
