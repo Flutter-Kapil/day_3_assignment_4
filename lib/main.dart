@@ -108,29 +108,53 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
                         Icon(Icons.thumb_up),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Text('PREP'),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Text('25 Min'),
                       ],
+                    ),
+                    SizedBox(
+                      width: 10,
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Icon(Icons.timer),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Text('COOK'),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Text('1 Hr'),
                       ],
+                    ),
+                    SizedBox(
+                      width: 10,
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Icon(Icons.fastfood),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Text('FEEDS'),
+                        SizedBox(
+                          height: 5,
+                        ),
                         Text('4-6'),
                       ],
                     ),
