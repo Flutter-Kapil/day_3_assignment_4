@@ -21,12 +21,12 @@ class MyApp extends StatelessWidget {
               Container(
                 margin: EdgeInsets.fromLTRB(10.0, 78.0, 10.0, 4.0),
                 padding: EdgeInsets.fromLTRB(4.0, 2.0, 4.0, 8.0),
-                decoration: BoxDecoration(
-                  color: Colors.blue.shade100,
-                  border: Border.all(
-                    color: Colors.black,
-                  ),
-                ),
+//                decoration: BoxDecoration(
+//                  color: Colors.blue.shade100,
+//                  border: Border.all(
+//                    color: Colors.black,
+//                  ),
+//                ),
                 child: Center(
                   child: Text(
                     "Strawberry pavlova",
@@ -35,12 +35,12 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                decoration: BoxDecoration(
-                  color: Colors.blue.shade100,
-                  border: Border.all(
-                    color: Colors.black,
-                  ),
-                ),
+//                decoration: BoxDecoration(
+//                  color: Colors.blue.shade100,
+//                  border: Border.all(
+//                    color: Colors.black,
+//                  ),
+//                ),
 //                    width: 200.0,
                 margin: EdgeInsets.symmetric(vertical: 2.0, horizontal: 10.0),
 //                    padding,: EdgeInsets.symmetric(vertical: 1.0),
@@ -58,12 +58,12 @@ class MyApp extends StatelessWidget {
               ),
               Container(
                 margin: EdgeInsets.fromLTRB(10.0, 4.0, 10.0, 10.0),
-                decoration: BoxDecoration(
-                  color: Colors.blue.shade100,
-                  border: Border.all(
-                    color: Colors.black,
-                  ),
-                ),
+//                decoration: BoxDecoration(
+//                  color: Colors.blue.shade100,
+//                  border: Border.all(
+//                    color: Colors.black,
+//                  ),
+//                ),
                 child: Wrap(
                   alignment: WrapAlignment.center,
                   children: <Widget>[
@@ -101,12 +101,12 @@ class MyApp extends StatelessWidget {
               Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 10.0),
-                decoration: BoxDecoration(
-                  color: Colors.blue.shade100,
-                  border: Border.all(
-                    color: Colors.black,
-                  ),
-                ),
+//                decoration: BoxDecoration(
+//                  color: Colors.blue.shade100,
+//                  border: Border.all(
+//                    color: Colors.black,
+//                  ),
+//                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
