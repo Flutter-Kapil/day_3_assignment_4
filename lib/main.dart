@@ -58,6 +58,134 @@ class _FoodLayoutState extends State<FoodLayout> {
         child: Image(image: AssetImage('image/food.png'), fit: BoxFit.fill));
   }
 
+  Widget _pcfIcons() {
+    return Container(
+      alignment: Alignment.center,
+      margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 10.0),
+//                decoration: BoxDecoration(
+//                  color: Colors.blue.shade100,
+//                  border: Border.all(
+//                    color: Colors.black,
+//                  ),
+//                ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              Icon(
+                Icons.thumb_up,
+                color: Colors.green,
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Text('PREP'),
+              SizedBox(
+                height: 5,
+              ),
+              Text('25 minutes',
+                  style: TextStyle(fontSize: 12, color: Colors.grey)),
+            ],
+          ),
+          SizedBox(
+            width: 4,
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Icon(Icons.timer, color: Colors.green),
+              SizedBox(
+                height: 5,
+              ),
+              Text('COOK'),
+              SizedBox(
+                height: 5,
+              ),
+              Text('1 hour',
+                  style: TextStyle(fontSize: 12, color: Colors.grey)),
+            ],
+          ),
+          SizedBox(
+            width: 4,
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Icon(Icons.fastfood, color: Colors.green),
+              SizedBox(
+                height: 5,
+              ),
+              Text('FEEDS'),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                '4 - 6',
+                style: TextStyle(fontSize: 12, color: Colors.grey),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _reviewRating() {
+    return Container(
+      margin: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 10.0),
+//                decoration: BoxDecoration(
+//                  color: Colors.blue.shade100,
+//                  border: Border.all(
+//                    color: Colors.black,
+//                  ),
+//                ),
+      child: Wrap(
+        runSpacing: 7,
+        spacing: 10,
+        alignment: WrapAlignment.center,
+        children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Icon(
+                Icons.star,
+                size: 18,
+                color: Colors.grey.shade600,
+              ),
+              Icon(
+                Icons.star,
+                size: 18,
+                color: Colors.grey.shade600,
+              ),
+              Icon(
+                Icons.star,
+                size: 18,
+                color: Colors.grey.shade600,
+              ),
+              Icon(
+                Icons.star,
+                size: 18,
+                color: Colors.grey.shade600,
+              ),
+              Icon(
+                Icons.star,
+                size: 18,
+                color: Colors.grey.shade600,
+              ),
+            ],
+          ),
+          Container(
+            padding: EdgeInsets.fromLTRB(5, 2, 5, 2),
+            child: Text('170 Reviews'),
+          )
+        ],
+      ),
+    );
+  }
+
   Widget _infoSection() {
     return SafeArea(
       child: Column(
@@ -101,126 +229,8 @@ class _FoodLayoutState extends State<FoodLayout> {
               ),
             ),
           ),
-          Container(
-            margin: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 10.0),
-//                decoration: BoxDecoration(
-//                  color: Colors.blue.shade100,
-//                  border: Border.all(
-//                    color: Colors.black,
-//                  ),
-//                ),
-            child: Wrap(
-              runSpacing: 7,
-              alignment: WrapAlignment.center,
-              children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Icon(
-                      Icons.star,
-                      size: 18,
-                      color: Colors.grey.shade600,
-                    ),
-                    Icon(
-                      Icons.star,
-                      size: 18,
-                      color: Colors.grey.shade600,
-                    ),
-                    Icon(
-                      Icons.star,
-                      size: 18,
-                      color: Colors.grey.shade600,
-                    ),
-                    Icon(
-                      Icons.star,
-                      size: 18,
-                      color: Colors.grey.shade600,
-                    ),
-                    Icon(
-                      Icons.star,
-                      size: 18,
-                      color: Colors.grey.shade600,
-                    ),
-                  ],
-                ),
-                Container(
-                  padding: EdgeInsets.all(2),
-                  child: Text('170 Reviews'),
-                )
-              ],
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 10.0),
-//                decoration: BoxDecoration(
-//                  color: Colors.blue.shade100,
-//                  border: Border.all(
-//                    color: Colors.black,
-//                  ),
-//                ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    Icon(
-                      Icons.thumb_up,
-                      color: Colors.green,
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text('PREP'),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text('25 minutes',
-                        style: TextStyle(fontSize: 12, color: Colors.grey)),
-                  ],
-                ),
-                SizedBox(
-                  width: 12,
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Icon(Icons.timer, color: Colors.green),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text('COOK'),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text('1 hour',
-                        style: TextStyle(fontSize: 12, color: Colors.grey)),
-                  ],
-                ),
-                SizedBox(
-                  width: 12,
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Icon(Icons.fastfood, color: Colors.green),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text('FEEDS'),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      '4 - 6',
-                      style: TextStyle(fontSize: 12, color: Colors.grey),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
+          _reviewRating(),
+          _pcfIcons()
         ],
       ),
     );
