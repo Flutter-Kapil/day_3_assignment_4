@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: foodLayout()));
+  runApp(MaterialApp(home: FoodLayout()));
 }
 
-class foodLayout extends StatefulWidget {
+class FoodLayout extends StatefulWidget {
   @override
-  _foodLayoutState createState() => _foodLayoutState();
+  _FoodLayoutState createState() => _FoodLayoutState();
 }
 
-class _foodLayoutState extends State<foodLayout> {
+class _FoodLayoutState extends State<FoodLayout> {
   Widget _layout() {
     Orientation orientation = MediaQuery.of(context).orientation;
 
